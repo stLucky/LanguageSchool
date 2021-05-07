@@ -1,0 +1,13 @@
+.title {
+  font-weight: 700;
+  font-family: $decor-font;
+  text-transform: uppercase;
+
+  &--normalcase {
+    text-transform: none;
+  }
+
+  &--sky {
+    color: $blue-extra;
+  }
+}

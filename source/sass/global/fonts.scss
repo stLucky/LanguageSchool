@@ -1,0 +1,77 @@
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Montserrat";
+  font-display: swap;
+  src: local("Montserrat"),
+  local("Montserrat-Regular"),
+  local("Montserrat Regular"),
+  url("../fonts/Montserrat-Regular.woff2") format("woff2"),
+  url("../fonts/Montserrat-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 600;
+  font-family: "Montserrat";
+  font-display: swap;
+  src: local("Montserrat-SemiBold"),
+  local("Montserrat SemiBold"),
+  url("../fonts/Montserrat-SemiBold.woff2") format("woff2"),
+  url("../fonts/Montserrat-SemiBold.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Lifehack Sans";
+  font-display: swap;
+  src: local("Lifehack-Sans-Bold"),
+  local("Lifehack Sans Bold"),
+  url("../fonts/LifehackSans-Bold.woff2") format("woff2"),
+  url("../fonts/LifehackSans-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 300;
+  font-family: "Museo Sans Cyrl";
+  font-display: swap;
+  src: local("Museo-Sans-Cyrl-Light"),
+  local("Museo Sans Cyrl Light"),
+  url("../fonts/MuseoSansCyrl-300.woff2") format("woff2"),
+  url("../fonts/MuseoSansCyrl-300.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 500;
+  font-family: "Museo Sans Cyrl";
+  font-display: swap;
+  src: local("Museo-Sans-Cyrl-Medium"),
+  local("Museo Sans Cyrl Medium"),
+  url("../fonts/MuseoSansCyrl-500.woff2") format("woff2"),
+  url("../fonts/MuseoSansCyrl-500.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Museo Sans Cyrl";
+  font-display: swap;
+  src: local("Museo-Sans-Cyrl-Bold"),
+  local("Museo Sans Cyrl Bold"),
+  url("../fonts/MuseoSansCyrl-700.woff2") format("woff2"),
+  url("../fonts/MuseoSansCyrl-700.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 900;
+  font-family: "Museo Sans Cyrl";
+  font-display: swap;
+  src: local("Museo-Sans-Cyrl-Black"),
+  local("Museo Sans Cyrl Black"),
+  url("../fonts/MuseoSansCyrl-900.woff2") format("woff2"),
+  url("../fonts/MuseoSansCyrl-900.woff") format("woff");
+}

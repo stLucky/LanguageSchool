@@ -1,0 +1,33 @@
+.btn-play {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 20px;
+  font-family: $extra-font;
+  color: $orange-base;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+
+  &::before {
+    content: "";
+    width: 92px;
+    height: 87px;
+    margin-right: 24px;
+    background-image: url("../img/play.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/play@2x.png");
+    }
+  }
+
+  &--smaller {
+    &::before {
+      width: 73px;
+      height: 67px;
+    }
+  }
+}

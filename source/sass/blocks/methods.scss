@@ -1,0 +1,29 @@
+$back-height: 330px;
+
+.methods {
+  overflow-x: hidden;
+}
+
+.methods__title-wrap {
+  min-height: $back-height;
+  padding: 145px 0 20px;
+  text-align: center;
+  background-color: $dark-blue-base;
+  background-image: url("../img/methods-back_mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/methods-back_mobile@2x.jpg");
+  }
+}
+
+.methods__title {
+  margin: 0;
+  font-size: 69px;
+  color: $white-base;
+}
+
+.methods__list {
+  @include list-reset;
+}

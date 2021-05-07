@@ -1,0 +1,71 @@
+$back-height: 747px;
+$back-width: 847px;
+$back-offset: 165px;
+$cloud-height: 320px;
+$cloud-width: 640px;
+
+.about {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: $back-height;
+  background-color: $dark-blue-base;
+  background-image: url("../img/about_mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: -$back-offset 0;
+  background-size: auto 100%;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/about_mobile@2x.jpg");
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 33px;
+    height: 130px;
+    background-image: url("../img/about-decor_mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/about-decor_mobile@2x.png");
+    }
+  }
+
+  @media (min-width: #{$back-width - $back-offset}) {
+    background-position: 0 0;
+  }
+}
+
+.about__desc-wrap {
+  display: flex;
+  align-items: center;
+  max-width: $cloud-width;
+  min-height: $cloud-height;
+  margin: 177px auto 32px;
+  padding: 0 60px;
+  background-image: url("../img/cloud_mobile.png");
+  background-repeat: no-repeat;
+  background-position: -26px 0;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/cloud_mobile@2x.png");
+  }
+}
+
+.about__desc {
+  margin: 17px 0 0 16px;
+  font-weight: 500;
+  font-size: 21px;
+  font-family: $extra-font;
+  text-align: center;
+}
+
+

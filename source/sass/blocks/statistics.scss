@@ -1,0 +1,35 @@
+.statistics {
+  padding: 30px 0 40px;
+}
+
+.statistics__list {
+  display: grid;
+  margin: 0;
+  text-align: center;
+  column-gap: 40px;
+  row-gap: 86px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.statistics__item {
+  &--offset {
+    margin-right: 30px;
+  }
+}
+
+.statistics__term {
+  font-size: 99px;
+  font-family: $decor-font;
+  color: $blue-base;
+
+  &--smaller {
+    line-height: 1.1;
+  }
+}
+
+.statistics__desc {
+  margin: 0;
+  font-weight: 700;
+  font-size: 24px;
+  font-family: $extra-font;
+}

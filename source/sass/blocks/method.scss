@@ -1,0 +1,104 @@
+$back-innovation-height: 839px;
+$back-universality-height: 963px;
+$back-practicality-height: 969px;
+
+.method {
+
+}
+
+.method--innovation {
+  min-height: $back-innovation-height;
+  padding: 20px 0 80px;
+  color: $white-base;
+  background-color: $dark-blue-base;
+  background-image: url("../img/innovation-back_mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/innovation-back_mobile@2x.jpg");
+  }
+}
+
+.method--personality {
+  min-height: 1111px;
+  padding: 60px 0;
+
+  .method__title {
+    margin: 0 0 8px;
+    letter-spacing: 2px;
+  }
+
+  .method__annotation {
+    margin: 0 0 20px;
+  }
+
+  .method__desc {
+    margin: 0 0 61px;
+  }
+}
+
+.method--universality {
+  min-height: $back-universality-height;
+  padding: 120px 0 80px;
+  color: $white-base;
+  background-color: $dark-blue-base;
+  background-image: url("../img/universality-back_mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/universality-back_mobile@2x.jpg");
+  }
+
+  .method__title {
+    margin-top: 27px;
+  }
+}
+
+.method--ideality {
+  min-height: 1050px;
+  padding: 60px 0;
+}
+
+.method--practicality {
+  min-height: $back-practicality-height;
+  padding: 150px 0 110px;
+  color: $white-base;
+  background-color: $dark-blue-base;
+  background-image: url("../img/practicality-back_mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/practicality-back_mobile@2x.jpg");
+  }
+
+  .method__title {
+    letter-spacing: 2px;
+  }
+}
+
+.method__title {
+  margin: 0 0 11px;
+  font-size: 56px;
+  letter-spacing: 3px;
+}
+
+.method__annotation {
+  margin: 0 0 28px;
+  font-weight: 700;
+  font-size: 17px;
+  font-family: $extra-font;
+  letter-spacing: 3.5px;
+}
+
+.method__desc {
+  margin: 0 0 41px;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.method__slider {
+  margin: 0 auto;
+}

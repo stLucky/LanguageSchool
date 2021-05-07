@@ -1,0 +1,98 @@
+.promo {
+  position: relative;
+  min-height: $promo-back-height;
+  padding-top: 79px;
+  padding-bottom: 160px;
+  overflow: hidden;
+  color: $white-base;
+  background-color: $dark-blue-base;
+  background-image: url("../img/promo-back_mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: calc(50% - #{$promo-back-offset}) 0;
+
+  background-size: auto 100%;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &::before {
+    top: 0;
+    left: 0;
+    width: 98px;
+    height: 99px;
+    background-image: url("../img/ring.png");
+    transform: translateX(-50%);
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/ring@2x.png");
+    }
+  }
+
+  &::after {
+    bottom: -93px;
+    left: calc(50% - 18px);
+    width: 214px;
+    height: 263px;
+    background-image: url("../img/multiline.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/multiline@2x.png");
+    }
+  }
+
+  @media (min-width: #{$promo-back-width - $promo-back-offset - 70px}) {
+    background-position: 0 0;
+    background-size: 100% 100%;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/promo-back_mobile@2x.jpg");
+  }
+}
+
+.promo__title {
+  margin: 0 0 17px;
+  font-size: 76px;
+  line-height: 86px;
+}
+
+.promo__desc {
+  position: relative;
+  margin: 0 0 47px;
+  font-weight: 500;
+  font-size: 31px;
+  font-family: $extra-font;
+
+  &::before {
+    top: 0;
+    content: "";
+    position: absolute;
+    left: calc(50% + 260px);
+    width: 146px;
+    height: 169px;
+    background-image: url("../img/rhomb.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: translateY(-25%);
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/rhomb@2x.png");
+    }
+  }
+}
+
+.promo__btn {
+  margin-left: 3px;
+}
+
+
+
+
+
+
+

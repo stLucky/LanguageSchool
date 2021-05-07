@@ -1,0 +1,114 @@
+$back-height: 1908px;
+$back-width: 966px;
+$back-offset: 168px;
+$btn-x-offset: 5px;
+$btn-y-offset: 10px;
+
+.programs {
+  min-height: $back-height;
+  margin-top: -68px;
+  padding: 200px 0 150px;
+  overflow-x: hidden;
+  background-color: $dark-blue-base;
+  background-image: url("../img/programs-back_mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: -$back-offset 0;
+
+  background-size: auto 100%;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/programs-back_mobile@2x.jpg");
+  }
+
+  @media (min-width: #{$back-width - $back-offset}) {
+    background-position: 0 0;
+  }
+
+  @media (min-width: #{$back-width}) {
+    background-size: 100% 100%;
+  }
+}
+
+.programs__title {
+  margin: 0 0 33px;
+  font-size: 57px;
+  text-align: center;
+  color: $white-base;
+}
+
+.programs__list {
+  @include list-reset;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin: -#{$btn-y-offset} -#{$btn-x-offset};
+  padding-bottom: 34px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 70px;
+    width: 112px;
+    height: 106px;
+    background-image: url("../img/triangle.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/triangle@2x.png");
+    }
+  }
+}
+
+.programs__item {
+  margin: $btn-y-offset $btn-x-offset;
+}
+
+.programs__btn {
+  display: block;
+  min-height: 50px;
+  padding: 14px 26px;
+  font-weight: 600;
+  font-size: 17px;
+  color: $white-base;
+  border: 1px solid $white-base;
+  border-radius: 25px;
+
+  &--active {
+    background-color: $blue-base;
+    border: none;
+  }
+}
+
+.programs__subtitle {
+  margin: 0 0 24px;
+  padding-top: 29px;
+  font-weight: 900;
+  font-size: 30px;
+  font-family: $extra-font;
+  color: $white-base;
+}
+
+.programs__desc {
+  margin: 0 0 37px;
+  font-size: 18px;
+  line-height: 24px;
+  color: $white-base;
+}
+
+.programs__btn-play {
+  margin-bottom: 39px;
+}
+
+.programs__slider {
+  margin: 0 auto 45px;
+}
+
+.programs__sign-up {
+  display: flex;
+  max-width: 434px;
+  margin: 0 auto;
+}
+
+

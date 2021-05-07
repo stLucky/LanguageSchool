@@ -1,0 +1,43 @@
+.subscribe {
+  padding: 51px 0 52px;
+  text-align: center;
+
+  &--middle {
+    padding: 41px 0 29px;
+  }
+}
+
+.subscribe__form {
+  margin-bottom: 35px;
+}
+
+.subscribe__title {
+  margin: 0 0 18px;
+  font-size: 60px;
+}
+
+.subscribe__desc {
+  margin: 0 0 56px;
+  font-weight: 500;
+  font-size: 22px;
+  font-family: $extra-font;
+}
+
+.subscribe__note {
+  position: relative;
+  display: block;
+  padding-top: 27px;
+  font-size: 16px;
+  line-height: 22px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 51px;
+    height: 2px;
+    background-color: $orange-base;
+  }
+}

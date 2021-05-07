@@ -1,0 +1,59 @@
+$burger-height: 37px;
+$burger-component-height: 4px;
+$burger-number: 3;
+$burger-spaces: $burger-height - ($burger-component-height * $burger-number);
+$burger-space: $burger-spaces / ($burger-number - 1);
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  font-family: inherit;
+  background-color: transparent;
+  border: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &--burger {
+    width: 111px;
+    height: 111px;
+    border: 2px solid rgba($white-base, 0.1);
+    border-radius: 50%;
+
+    &::before {
+      content: "";
+      width: 52px;
+      height: $burger-height;
+      background-image: linear-gradient(to top, $white-base $burger-component-height, transparent $burger-component-height, transparent ($burger-component-height + $burger-space), $white-base ($burger-component-height + $burger-space), $white-base ($burger-component-height * 2 + $burger-space), transparent ($burger-component-height * 2 + $burger-space), transparent (calc(100% - #{$burger-component-height})), $white-base (calc(100% - #{$burger-component-height})));
+    }
+  }
+
+  &--primary {
+    width: 100%;
+    max-width: 468px;
+    min-height: 110px;
+    padding: 30px;
+    font-weight: 700;
+    font-size: 24px;
+    font-family: $extra-font;
+    color: $white-base;
+    background-color: $orange-base;
+    border-radius: 55px;
+  }
+
+  &--secondary {
+    width: 100%;
+    min-height: 100px;
+    padding: 30px;
+    font-weight: 600;
+    font-size: 20px;
+    color: $white-base;
+    background-color: $blue-base;
+    border-radius: 50px;
+  }
+}
+
+

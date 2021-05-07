@@ -1,0 +1,54 @@
+$logo-width: 225px;
+
+
+.header {
+  padding: 48px 0 0;
+  font-family: $extra-font;
+  color: $white-base;
+  background-color: $dark-blue-base;
+  background-image: url("../img/header-back_mobile.jpg");
+  background-position: calc(50% - #{$promo-back-offset}) 0;
+  background-size: auto 100% ;
+  background-repeat: no-repeat;
+
+  @media (min-width: #{$promo-back-width - $promo-back-offset - 70px}) {
+    background-position: 0 0;
+    background-size: 100% 100%;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/header-back_mobile@2x.jpg");
+  }
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__main-nav {
+  display: none;
+}
+
+.header__logo {
+  margin: 0 0 0 5px;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 27px;
+  max-width: $logo-width;
+}
+
+.header__logo-img {
+  width: $logo-width;
+  height: 68px;
+  display: block;
+  margin-bottom: 17px;
+}
+
+.header__info {
+  display: none;
+}
+
+.header__toggle {
+  margin-top: 9px;
+}

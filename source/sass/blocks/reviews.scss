@@ -1,0 +1,26 @@
+$back-width: 783px;
+$back-top-height: 885px;
+
+.reviews__top-wrap {
+  min-height: $back-top-height;
+  padding: 120px 0;
+  background-color: $dark-blue-base;
+  background-image: url("../img/reviews-top_mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/reviews-top_mobile@2x.jpg");
+  }
+
+  @media (min-width: #{$back-width}) {
+    background-size: 100% 100%;
+  }
+}
+
+.reviews__title {
+  margin: 0 0 50px;
+  font-size: 55px;
+  text-align: center;
+  color: $white-base;
+}

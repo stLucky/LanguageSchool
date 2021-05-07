@@ -1,0 +1,13 @@
+.text {
+  &--uppercase {
+    text-transform: uppercase;
+  }
+
+  &--sun {
+    color: $orange-base;
+  }
+
+  &--sky {
+    color: $blue-base;
+  }
+}

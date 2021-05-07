@@ -1,0 +1,60 @@
+$back-height: 1586px;
+$back-width: 783px;
+
+.history {
+  position: relative;
+  min-height: $back-height;
+  padding: 120px 0;
+  text-align: center;
+  color: $white-base;
+  background-color: $dark-blue-base;
+  background-image: url("../img/history-back_mobile.jpg");
+  background-repeat: no-repeat;
+
+  background-size: auto 100%;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/history-back_mobile@2x.jpg");
+  }
+
+  @media (min-width: #{$back-width}) {
+    background-size: 100% 100%;
+  }
+}
+
+.history__title {
+  margin: 0 0 45px;
+  font-size: 64px;
+}
+
+.history__desc {
+  margin: 0 0 62px;
+  font-weight: 500;
+  font-size: 26px;
+  font-family: $extra-font;
+}
+
+.history__slider {
+  margin: 0 auto 52px;
+}
+
+.history__subtitle {
+  margin: 0 0 28px;
+  font-weight: 700;
+  font-size: 45px;
+  font-family: $decor-font;
+  text-transform: uppercase;
+}
+
+.history__question {
+  margin: 0 0 30px;
+  font-weight: 900;
+  font-size: 25px;
+  font-family: $extra-font;
+}
+
+.history__answer {
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0 0 80px;
+}

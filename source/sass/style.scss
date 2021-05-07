@@ -1,0 +1,43 @@
+// Normalize
+
+@import "normalize";
+
+
+
+// Global
+
+@import "global/variables";
+@import "global/global";
+@import "global/fonts";
+@import "global/mixins";
+
+// Libraries
+@import "../../node_modules/swiper/swiper";
+
+
+
+// Blocks
+
+@import "blocks/focus-visible";
+@import "blocks/visually-hidden";
+@import "blocks/text";
+@import "blocks/btn";
+@import "blocks/btn-play";
+@import "blocks/title";
+@import "blocks/container";
+@import "blocks/page";
+@import "blocks/header";
+@import "blocks/main-nav";
+@import "blocks/promo";
+@import "blocks/statistics";
+@import "blocks/about";
+@import "blocks/subscribe";
+@import "blocks/form";
+@import "blocks/programs";
+@import "blocks/slider";
+@import "blocks/methods";
+@import "blocks/method";
+@import "blocks/history";
+@import "blocks/features";
+@import "blocks/reviews";
+
