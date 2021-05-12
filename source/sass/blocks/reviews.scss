@@ -1,9 +1,10 @@
 $back-width: 783px;
-$back-top-height: 885px;
+$back-height: 885px;
 
-.reviews__top-wrap {
-  min-height: $back-top-height;
+.reviews {
+  min-height: $back-height;
   padding: 120px 0;
+  text-align: center;
   background-color: $dark-blue-base;
   background-image: url("../img/reviews-top_mobile.jpg");
   background-repeat: no-repeat;
@@ -24,3 +25,9 @@ $back-top-height: 885px;
   text-align: center;
   color: $white-base;
 }
+
+.reviews__slider {
+  margin: 0 auto 60px;
+}
+
+

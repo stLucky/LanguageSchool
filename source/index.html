@@ -10,46 +10,48 @@
     <title>Школа иностранных языков The Best</title>
     <link href="css/style.min.css"
           rel="stylesheet">
+    <link rel="stylesheet"
+          href="css/leaflet.min.css">
   </head>
   <body class="page__body">
-    <header class="header">
+    <header class="header header--nojs">
       <div class="container">
         <div class="header__inner">
           <nav class="header__main-nav main-nav">
             <ul class="main-nav__list">
-              <li>
+              <li class="main-nav__item">
                 <a class="main-nav__link"
-                   href="#">
+                   href="#about">
                   О школе
                 </a>
               </li>
-              <li>
+              <li class="main-nav__item">
                 <a class="main-nav__link"
-                   href="#">
+                   href="#programs">
                   Курсы
                 </a>
               </li>
-              <li>
+              <li class="main-nav__item">
                 <a class="main-nav__link"
-                   href="#">
+                   href="#advantages">
                   Преимущества
                 </a>
               </li>
-              <li>
+              <li class="main-nav__item">
                 <a class="main-nav__link"
-                   href="#">
+                   href="#process">
                   Процесс
                 </a>
               </li>
-              <li>
+              <li class="main-nav__item">
                 <a class="main-nav__link"
-                   href="#">
+                   href="#progress">
                   Достижения
                 </a>
               </li>
-              <li>
+              <li class="main-nav__item">
                 <a class="main-nav__link"
-                   href="#">
+                   href="#reviews">
                   Отзывы
                 </a>
               </li>
@@ -168,7 +170,7 @@
           </dl>
         </div>
       </section>
-      <div class="about">
+      <div class="about" id="about">
         <div class="about__desc-wrap">
           <p class="about__desc">
             Школа нового поколения
@@ -201,7 +203,8 @@
                      id="subscribe-top__tel"
                      name="tel"
                      type="tel"
-                     placeholder="Введите ваш телефон">
+                     placeholder="Введите ваш телефон"
+                     required>
             </p>
             <p class="form__field">
               <label class="visually-hidden"
@@ -212,7 +215,8 @@
                      id="subscribe-top__name"
                      name="name"
                      type="text"
-                     placeholder="Введите ваше имя">
+                     placeholder="Введите ваше имя"
+                     required>
             </p>
             <button class="btn btn--secondary"
                     type="submit">
@@ -225,7 +229,7 @@
           </small>
         </div>
       </section>
-      <section class="programs">
+      <section class="programs" id="programs">
         <div class="container">
           <h2 class="programs__title title">
             Выбирай обучение под конкретный <span class="text text--sun">возраст интересы</span>
@@ -412,7 +416,8 @@
                      id="subscribe-middle__tel"
                      name="tel"
                      placeholder="Введите ваш телефон"
-                     type="tel">
+                     type="tel"
+                     required>
             <p class="form__field">
               <label class="visually-hidden"
                      for="subscribe-middle__name">
@@ -422,7 +427,8 @@
                      id="subscribe-middle__name"
                      name="name"
                      placeholder="Введите ваше имя"
-                     type="text">
+                     type="text"
+                     required>
             </p>
             <button class="btn btn--secondary"
                     type="submit">
@@ -435,7 +441,7 @@
           </small>
         </div>
       </section>
-      <section class="methods">
+      <section class="methods" id="advantages">
         <div class="methods__title-wrap">
           <div class="container">
             <h2 class="methods__title title">
@@ -836,7 +842,8 @@
                      id="email"
                      name="email"
                      placeholder="Укажите вашу почту"
-                     type="email">
+                     type="email"
+                     required>
             </p>
             <button class="btn btn--secondary"
                     type="submit">
@@ -849,7 +856,7 @@
           </small>
         </div>
       </section>
-      <section class="history">
+      <section class="history" id="process">
         <div class="container">
           <h2 class="history__title title">
             Месяц обучения в <span class="text text--sun">10 фото</span>
@@ -1084,7 +1091,7 @@
             </div>
           </div>
         </div>
-        <div class="container">
+        <div class="container" id="progress">
           <h3 class="features__subtitle title">
             <span class="text text--sky">Награды и достижения,</span> которыми мы гордимся
           </h3>
@@ -1154,125 +1161,167 @@
           </div>
         </div>
       </section>
-      <section class="reviews">
-        <div class="reviews__top-wrap">
-          <div class="container">
-            <h2 class="reviews__title title">
-              <span class="text text--sky">Отзывы</span> довольных учеников и их родителей
-            </h2>
-            <div class="method__slider slider">
-              <div class="slider__inner">
-                <div class="swiper-container slider__swiper">
-                  <div class="swiper-wrapper ">
-                    <div class="swiper-slide">
-                      <picture>
-                        <source type="image/webp"
-                                srcset="img/reviews-slide_mobile.webp 1x, img/reviews-slide_mobile@2x.webp 2x">
-                        <img class="slider__img"
-                             src="img/reviews-slide_mobile.jpg"
-                             srcset="img/reviews-slide_mobile@2x.jpg 2x"
-                             alt=""
-                             width="496"
-                             height="338">
-                      </picture>
-                    </div>
-                    <div class="swiper-slide">
-                      <picture>
-                        <source type="image/webp"
-                                srcset="img/reviews-slide_mobile.webp 1x, img/reviews-slide_mobile@2x.webp 2x">
-                        <img class="slider__img"
-                             src="img/reviews-slide_mobile.jpg"
-                             srcset="img/reviews-slide_mobile@2x.jpg 2x"
-                             alt=""
-                             width="496"
-                             height="338">
-                      </picture>
-                    </div>
-                    <div class="swiper-slide">
-                      <picture>
-                        <source type="image/webp"
-                                srcset="img/reviews-slide_mobile.webp 1x, img/reviews-slide_mobile@2x.webp 2x">
-                        <img class="slider__img"
-                             src="img/reviews-slide_mobile.jpg"
-                             srcset="img/reviews-slide_mobile@2x.jpg 2x"
-                             alt=""
-                             width="496"
-                             height="338">
-                      </picture>
-                    </div>
-                    <div class="swiper-slide">
-                      <picture>
-                        <source type="image/webp"
-                                srcset="img/reviews-slide_mobile.webp 1x, img/reviews-slide_mobile@2x.webp 2x">
-                        <img class="slider__img"
-                             src="img/reviews-slide_mobile.jpg"
-                             srcset="img/reviews-slide_mobile@2x.jpg 2x"
-                             alt=""
-                             width="496"
-                             height="338">
-                      </picture>
-                    </div>
+      <section class="reviews" id="reviews">
+        <div class="container">
+          <h2 class="reviews__title title">
+            <span class="text text--sky">Отзывы</span> довольных учеников и их родителей
+          </h2>
+          <div class="reviews__slider slider">
+            <div class="slider__inner">
+              <div class="swiper-container slider__swiper">
+                <div class="swiper-wrapper ">
+                  <div class="swiper-slide">
+                    <picture>
+                      <source type="image/webp"
+                              srcset="img/reviews-slide_mobile.webp 1x, img/reviews-slide_mobile@2x.webp 2x">
+                      <img class="slider__img"
+                           src="img/reviews-slide_mobile.jpg"
+                           srcset="img/reviews-slide_mobile@2x.jpg 2x"
+                           alt=""
+                           width="496"
+                           height="338">
+                    </picture>
+                  </div>
+                  <div class="swiper-slide">
+                    <picture>
+                      <source type="image/webp"
+                              srcset="img/reviews-slide_mobile.webp 1x, img/reviews-slide_mobile@2x.webp 2x">
+                      <img class="slider__img"
+                           src="img/reviews-slide_mobile.jpg"
+                           srcset="img/reviews-slide_mobile@2x.jpg 2x"
+                           alt=""
+                           width="496"
+                           height="338">
+                    </picture>
+                  </div>
+                  <div class="swiper-slide">
+                    <picture>
+                      <source type="image/webp"
+                              srcset="img/reviews-slide_mobile.webp 1x, img/reviews-slide_mobile@2x.webp 2x">
+                      <img class="slider__img"
+                           src="img/reviews-slide_mobile.jpg"
+                           srcset="img/reviews-slide_mobile@2x.jpg 2x"
+                           alt=""
+                           width="496"
+                           height="338">
+                    </picture>
+                  </div>
+                  <div class="swiper-slide">
+                    <picture>
+                      <source type="image/webp"
+                              srcset="img/reviews-slide_mobile.webp 1x, img/reviews-slide_mobile@2x.webp 2x">
+                      <img class="slider__img"
+                           src="img/reviews-slide_mobile.jpg"
+                           srcset="img/reviews-slide_mobile@2x.jpg 2x"
+                           alt=""
+                           width="496"
+                           height="338">
+                    </picture>
                   </div>
                 </div>
-                <div class="slider__controls">
-                  <button class="slider__btn slider__btn--prev"></button>
-                  <div class="slider__pagination slider__pagination--points slider__pagination--light"></div>
-                  <button class="slider__btn slider__btn--next"></button>
-                </div>
+              </div>
+              <div class="slider__controls">
+                <button class="slider__btn slider__btn--prev"></button>
+                <div class="slider__pagination slider__pagination--points slider__pagination--light"></div>
+                <button class="slider__btn slider__btn--next"></button>
               </div>
             </div>
           </div>
+          <a class="btn btn--primary"
+             href="#">
+            Читать больше отзывов
+          </a>
         </div>
-        <h3 class="reviews__subtitle">
-          Отзывы
-        </h3>
-        <ul>
-          <li>
-            <blockquote>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aspernatur consectetur distinctio dolore expedita inventore maiores molestiae optio rem, vitae! Accusantium alias corporis delectus harum maxime nam quasi ut veniam!
-            </blockquote>
-            <blockquote>
-              <cite>
-                Школа иностранных языков Best
-              </cite>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam asperiores delectus eum impedit ipsum laudantium modi provident ratione recusandae saepe sed soluta sunt, ut? Ad at fuga laboriosam minus veniam.
-              </p>
-            </blockquote>
-          </li>
-          <li></li>
-        </ul>
-        <a href="#">
-          Читать больше отзывов
-        </a>
       </section>
-      <section>
-        <h2>
-          Приходи на бесплатное пробное занятие
-        </h2>
-        <p>
-          Заполни форму и мы свяжемся с вами в течении часа
-        </p>
-        <form action=""
-              method="post">
-          <label class="visually-hidden"
-                 for="">
-            Ваш телефон
-          </label>
-          <input id=""
-                 name=""
-                 type="tel">
-          <label for="">
-            Ваше имя
-          </label>
-          <input id=""
-                 name=""
-                 type="text">
-          <button type="submit">
-            Записаться бесплатно
-          </button>
-        </form>
+      <section class="subscribe">
+        <div class="container">
+          <h2 class="subscribe__title title">
+            Приходи на бесплатное пробное занятие
+          </h2>
+          <p class="subscribe__desc">
+            Заполни форму и мы свяжемся с вами в течении часа
+          </p>
+          <form class="subscribe__form form"
+                action="#"
+                method="post">
+            <p class="form__field">
+              <label class="visually-hidden"
+                     for="subscribe-bottom__tel">
+                Ваш телефон
+              </label>
+              <input class="form__input"
+                     id="subscribe-bottom__tel"
+                     name="tel"
+                     type="tel"
+                     placeholder="Введите ваш телефон"
+              required>
+            </p>
+            <p class="form__field">
+              <label class="visually-hidden"
+                     for="subscribe-bottom__name">
+                Ваше имя
+              </label>
+              <input class="form__input"
+                     id="subscribe-bottom__name"
+                     name="name"
+                     type="text"
+                     placeholder="Введите ваше имя"
+              required>
+            </p>
+            <button class="btn btn--secondary"
+                    type="submit">
+              Записаться бесплатно
+            </button>
+          </form>
+          <small class="subscribe__note">
+            Нажимая кнопку &laquo;Заказать консультацию&raquo;, я даю<br> свое согласие на обработку моих<br>
+            персональных данных
+          </small>
+        </div>
       </section>
+      <div class="map">
+        <div class="map__canvas"
+             id="map"></div>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <p class="footer__logo">
+            <img class="footer__logo-img"
+                 src="img/logo.png"
+                 width="225"
+                 height="68"
+                 alt="">
+            <span> Школа иностранных языков</span>
+          </p>
+          <div class="footer__social social">
+            <h2 class="social__title">
+              Следите за нашими новостями
+            </h2>
+            <ul class="social__list">
+              <li class="social__item">
+                <a class=" icon icon--vk"
+                   href="#">
+                  <span class="visually-hidden"> Вконтакте </span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class=" icon icon--inst"
+                   href="#">
+                  <span class="visually-hidden"> Инстаграм </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <p class="footer__tel">
+            <span class="footer__tel-icon icon icon--tel"></span> <span class="footer__tel-content"> Наш телефон:<br>
+            <span class="footer__tel-number">+79 222 597 222 </span> </span>
+          </p>
+          <a class="btn btn--primary"
+             href="#">
+            Заказать звонок
+          </a>
+        </div>
+      </footer>
     </main>
     <script src="js/main.min.js"></script>
   </body>

@@ -12,6 +12,7 @@ $burger-space: $burger-spaces / ($burger-number - 1);
   font-family: inherit;
   background-color: transparent;
   border: none;
+  transition: background-color $transition-duration;
 
   &:hover {
     cursor: pointer;
@@ -22,12 +23,51 @@ $burger-space: $burger-spaces / ($burger-number - 1);
     height: 111px;
     border: 2px solid rgba($white-base, 0.1);
     border-radius: 50%;
+    transition: border-color $transition-duration;
 
     &::before {
       content: "";
       width: 52px;
       height: $burger-height;
       background-image: linear-gradient(to top, $white-base $burger-component-height, transparent $burger-component-height, transparent ($burger-component-height + $burger-space), $white-base ($burger-component-height + $burger-space), $white-base ($burger-component-height * 2 + $burger-space), transparent ($burger-component-height * 2 + $burger-space), transparent (calc(100% - #{$burger-component-height})), $white-base (calc(100% - #{$burger-component-height})));
+    }
+
+    &:hover {
+      border-color: $white-base;
+    }
+  }
+
+  &--close {
+    $y-offset: 30px;
+    position: relative;
+    width: 111px;
+    height: 111px;
+    border: 2px solid rgba($white-base, 0.1);
+    border-radius: 50%;
+    transition: border-color $transition-duration;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: $y-offset;
+      left: 50%;
+      width: $burger-component-height;
+      height: calc(100% - #{$y-offset});
+      background-color: $white-base;
+      border-radius: 4px;
+    }
+
+    &::before {
+      transform: translate(-50%, -$y-offset / 2) rotate(45deg);
+    }
+
+    &:after {
+      transform: translate(-50%, -$y-offset / 2) rotate(-45deg);
+    }
+
+    &:hover {
+      border-color: $white-base;
     }
   }
 
@@ -42,6 +82,10 @@ $burger-space: $burger-spaces / ($burger-number - 1);
     color: $white-base;
     background-color: $orange-base;
     border-radius: 55px;
+
+    &:hover {
+      background-color: darken($orange-base, 10%);
+    }
   }
 
   &--secondary {
@@ -53,6 +97,10 @@ $burger-space: $burger-spaces / ($burger-number - 1);
     color: $white-base;
     background-color: $blue-base;
     border-radius: 50px;
+
+    &:hover {
+      background-color: darken($blue-base, 10%);
+    }
   }
 }
 

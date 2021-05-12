@@ -1,0 +1,19 @@
+$map-width: 620px;
+$map-height: 747px;
+
+.map {
+  min-height: $map-height;
+  background-image: url("../img/map_mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/map_mobile@2x.jpg");
+  }
+}
+
+.map__canvas {
+  width: 100%;
+  height: $map-height;
+}

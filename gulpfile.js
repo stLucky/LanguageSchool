@@ -70,6 +70,19 @@ const styles = () => {
 
 exports.styles = styles;
 
+// Lib
+
+const cssLib = () => {
+  return gulp.src('source/lib/css/leaflet.css')
+    .pipe(postcss([
+      csso()
+    ]))
+    .pipe(rename('leaflet.min.css'))
+    .pipe(gulp.dest('build/css'));
+};
+
+exports.cssLib = cssLib;
+
 // HTML
 
 const html = () => {
@@ -198,6 +211,7 @@ const build = gulp.series(
   clean,
   gulp.parallel(
     styles,
+    cssLib,
     html,
     scripts,
     copy,

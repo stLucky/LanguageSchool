@@ -1,5 +1,7 @@
 $back-height: 747px;
 $back-width: 847px;
+$back-height-desktop: 866px;
+$back-width-desktop: 2000px;
 $back-offset: 165px;
 $cloud-height: 320px;
 $cloud-width: 640px;
@@ -40,6 +42,12 @@ $cloud-width: 640px;
 
   @media (min-width: #{$back-width - $back-offset}) {
     background-position: 0 0;
+  }
+
+  @media (min-width: #{$back-width}) {
+    min-height: $back-height-desktop;
+    background-position: center;
+    background-image: url("../img/about_desktop.jpg");
   }
 }
 

@@ -1,15 +1,16 @@
 $logo-width: 225px;
 
-
 .header {
+  position: relative;
+  min-height: $header-spacer;
   padding: 48px 0 0;
   font-family: $extra-font;
   color: $white-base;
   background-color: $dark-blue-base;
   background-image: url("../img/header-back_mobile.jpg");
-  background-position: calc(50% - #{$promo-back-offset}) 0;
-  background-size: auto 100% ;
   background-repeat: no-repeat;
+  background-position: calc(50% - #{$promo-back-offset}) 0;
+  background-size: auto 100%;
 
   @media (min-width: #{$promo-back-width - $promo-back-offset - 70px}) {
     background-position: 0 0;
@@ -21,8 +22,41 @@ $logo-width: 225px;
   }
 }
 
+.header--opened {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  min-width: 620px;
+  height: 100%;
+  overflow-y: auto;
+  background-image: none;
+
+  .header__main-nav {
+    display: block;
+    order: 1;
+    width: 100%;
+  }
+}
+
+.header--nojs {
+  background-image: none;
+
+  .header__main-nav {
+    display: block;
+    order: 1;
+    width: 100%;
+  }
+
+  .header__toggle {
+    display: none;
+  }
+}
+
 .header__inner {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -31,17 +65,17 @@ $logo-width: 225px;
 }
 
 .header__logo {
+  max-width: $logo-width;
   margin: 0 0 0 5px;
   font-weight: 300;
   font-size: 22px;
   line-height: 27px;
-  max-width: $logo-width;
 }
 
 .header__logo-img {
+  display: block;
   width: $logo-width;
   height: 68px;
-  display: block;
   margin-bottom: 17px;
 }
 

@@ -41,14 +41,16 @@ $btn-y-offset: 10px;
   position: relative;
   display: flex;
   flex-wrap: wrap;
+  min-height: 384px;
+  align-content: center;
   margin: -#{$btn-y-offset} -#{$btn-x-offset};
   padding-bottom: 34px;
 
   &::after {
     content: "";
     position: absolute;
-    bottom: 0;
     right: 70px;
+    bottom: 0;
     width: 112px;
     height: 106px;
     background-image: url("../img/triangle.png");
@@ -72,12 +74,12 @@ $btn-y-offset: 10px;
   font-weight: 600;
   font-size: 17px;
   color: $white-base;
-  border: 1px solid $white-base;
+  box-shadow: 0 0 0 1px $white-base;
   border-radius: 25px;
 
   &--active {
     background-color: $blue-base;
-    border: none;
+    box-shadow: none;
   }
 }
 

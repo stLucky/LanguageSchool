@@ -1,0 +1,31 @@
+.icon {
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 2px solid $orange-base;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: border-color $transition-duration;
+
+  &--vk {
+    background-image: url("../img/icon-vk.svg");
+    background-size: 35px 21px;
+  }
+
+  &--inst {
+    background-image: url("../img/icon-insta.svg");
+    background-size: 34px 33px;
+  }
+
+  &--tel {
+    background-image: url("../img/icon-tel.svg");
+    background-size: 24px 24px;
+  }
+}
+
+a.icon {
+  &:hover {
+    border-color: darken($orange-base, 20%);
+  }
+}

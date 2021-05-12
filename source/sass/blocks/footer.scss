@@ -1,0 +1,62 @@
+$back-height: 597px;
+
+.footer {
+  min-height: $back-height;
+  padding: 30px 0;
+  color: $white-base;
+  background-image: url("../img/footer-back_mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/footer-back_mobile@2x.jpg");
+  }
+}
+
+.footer__logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 50px;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 24px;
+  font-family: $extra-font;
+}
+
+.footer__logo-img {
+  width: 225px;
+  height: 68px;
+}
+
+.footer__social {
+  margin: 0 0 50px;
+}
+
+.footer__tel {
+  display: flex;
+  align-items: center;
+  margin: 0 0 50px;
+}
+
+.footer__tel-icon {
+  margin-right: 20px;
+}
+
+.footer__tel-content {
+  font-weight: 300;
+  font-size: 15px;
+  font-family: $extra-font;
+  color: rgba($gray-base, 0.8);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.footer__tel-number {
+  font-weight: 500;
+  font-size: 32px;
+  color: $white-base;
+  letter-spacing: normal;
+}
+
